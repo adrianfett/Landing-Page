@@ -1,0 +1,332 @@
+/*  STYLE GUIDES 
+
+0. RESET
+1. LAYOUT
+2. GENERIC ITEMS
+3. PARTS OF THE WEB
+4. LIST
+5. FORM
+6. ANIMATIONS
+
+--------------------
+
+COLORS:
+    Color1 => #234567;
+    Color2 => #234567;
+    Color3 => #234567;
+    Color4 => #234567;
+*/
+
+/* 0. RESET */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 1. LAYOUT */
+
+body {
+    text-align: center; font: 300 20px/1.7 /* aquí colocar tipografía */;
+}
+
+.header{
+    background: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: lightblue;
+
+}
+.contact {
+    text-align: left;
+}
+
+.list-services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 2. GENERIC ITEMS */
+.header {
+    height: 450px;
+    background: url(../Img/christian-wiebel-Ow6a_JaZRqM-unsplash.jpg) no-repeat center top; background-size:cover;}
+
+.navbar {
+    height: 63px;
+    background: lightblue;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+    .navbar a {
+    color:black;
+    padding: 0 20px;
+    }
+
+
+.title {
+    margin-bottom: 40px;
+    font: 60px;
+    text-transform: uppercase;
+}
+p {
+    margin-bottom: 40px;
+}
+
+/* 3. PARTS OF THE WEB */
+
+.content {
+    padding: 80px 0;
+}
+.who {
+    background-color: darkgreen; color: #fff;
+}
+    .who p {
+        max-width: 1055px;
+        margin: 0 auto;
+    }
+
+.services {
+    background-color: aquamarine; color: black;
+}
+
+.contact {
+    background: url() no-repeat center top cornflowerblue;
+    background-size: cover;
+    color: #000;
+}
+    .contain {
+        max-width: 1055px;
+        margin: 0 auto;
+
+    }
+
+    .contact p {
+        max-width: 450px;
+    }
+ .btn {
+     border: 2px solid #fff;
+     padding: 10px 40px;
+     display: inline-block;
+     text-decoration: none;
+     border-radius: 10px;
+
+ }
+
+ /* FOOTER */
+
+ .site-footer
+{
+  background-color:#26272b;
+  padding: 10px;px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+.social-icons a.dribbble:hover
+{
+  background-color:#ea4c89
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+/* 4. LIST */
+
+/* 5. FORM */
+
+/* 6. ANIMATIONS */
